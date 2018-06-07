@@ -1,0 +1,81 @@
+#### data parameter
+- train_file[default=None]
+    - file path for train, must be set
+- eval_file[default=None]
+    - file path for evalute, must be set
+- test_file[default=None]
+    - file path for test
+- infer_file[default=None]
+    - file path for infer, to generate predict results
+- FIELD_COUNT[default=None]
+    - field number in data set, field index start by 1, must be set
+- FEATURE_COUNT[default=None]
+    - feature number in data Set, feat index start by 1, must be set 
+- PAIR_NUM[default=None]
+    - just used for deep interest network, pair field number for build attention net
+- DNN_FIELD_NUM[default=None]
+    - just used for deep interest network, libffm format feature field number
+- n_user[default=None]
+    - just used for cccfnet model, the user number in data set
+- n_item[default=None]
+    - just used for cccfnet model, the item number in data set
+- n_user_attr[default=None]
+    - just used for cccfnet model, the user attribute number in data set
+- n_item_attr[default=None]
+    - just used for cccfnet model, the item attribute number in data set
+- mu[default=None]
+    - just used for cccfnet model, the bias for cccfnet model , mu is equal to average score in train data
+- data_format[default=None]
+    - data format, just support libffm format, din format, cccfnet format, must be set
+
+#### model parameter
+- method[default=None]
+    - support classification or regression, must be set
+- model_type[default=None]
+    - support deepFM, deepWide, dnn, ipnn, opnn, fm, lr, din, cccfnet,  must be set
+- dim[default=None]
+    - embedding dim, must be set 
+- layer_sizes[default=None]
+    - a list, the number of nodes per layer, must be set
+- activation[default=None]
+    - a list, activate function per layer, support sigmoid, relu, tanh, must be set
+- dropout[default=None]
+    - a list, dropout rate per layer, must be set
+- load_model_name[default=None]
+    - if you train from a pretrain model, must set load_model_name
+- infer_model_name[default=None]
+    - when inferring, you must set infer_model_name to decide which model you would like to use
+- attention_layer_sizes[default=None]
+    - just for deep interest network, attention layer sizes for attention network
+- attention_activation[default=None]
+    - just for deep interest network, attention activation function for attention network
+#### train parameter
+- init_method[default=tnormal]
+    - parameter initialization method, support normal,tnormal,uniform,he_normal,he_uniform,xavier_normal,xavier_uniform
+- init_value[default=0.01]
+    - parameter initialization variance
+- embed_l2[default=0.0]
+    - l2 regular coefficient for embedding parameter
+- embed_l1[default=0.0]
+    - l1 regular coefficient for embedding parameter
+- layer_l2[default=0.0]
+    - l2 regular coefficient for layer parameter
+- layer_l1[default=0.0]
+    - l1 regular coefficient for layer parameter
+- learning_rate[default=0.001]
+- loss[default=None]
+    - support square_loss,log_loss,cross_entropy_loss, must be set
+- optimizer[default=adam]
+    - support adadelta,adagrad,sgd,adam,ftrl,rmsprop,gd,padagrad,pgd
+- epochs[default=10]
+- batch_size[default=1]
+
+#### info parameter
+- show_step[default=1]
+    - show train loss per N step, N = show_step
+- save_epoch[default=5]
+    - save model per N epoch , N = save_epoch
+- metrics[default=None]
+    - support logloss, auc , rmse, group auc(required data has user id or impression id)
+
+you can find more detail description at [parameter configuration](https://deeprec.visualstudio.com/_git/deeprec?path=%2Fwiki%2FDeepRec%20Tools.md&version=GBmaster)

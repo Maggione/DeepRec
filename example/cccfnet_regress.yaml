@@ -1,0 +1,49 @@
+#data
+#data format:ffm
+data:
+     train_file  :  data/cccfnet/train.txt
+     eval_file  :  data/cccfnet/eval.txt
+     test_file  :  data/cccfnet/test.txt
+     #infer_file  :  data/infer.userid.txt
+     n_user : 671
+     n_item : 9066
+     n_user_attr : 764
+     n_item_attr : 24
+     data_format : cccfnet
+     mu : 3.543579578399658
+
+#model
+#model_type:deepFM or deepWide or dnn or ipnn or opnn or fm or lr cccfnet
+#method:classification and regression
+model:
+    method : regression
+    model_type : cccfnet
+    dim : 16
+    layer_sizes : [16]
+    activation : [identity]
+    dropout : [0.0]
+    infer_model_name : epoch_2
+#    load_model_name : ./checkpoint/epoch_1
+
+
+#train
+#init_method: normal,tnormal,uniform,he_normal,he_uniform,xavier_normal,xavier_uniform
+train:
+    init_method: tnormal
+    init_value : 0.01
+    embed_l2 : 0.000
+    embed_l1 : 0.0000
+    layer_l2 : 0.000
+    layer_l1 : 0.0000
+    learning_rate : 0.1
+    loss : square_loss
+    optimizer : sgd
+    epochs : 10
+    batch_size : 500
+
+#show info
+#metric :'auc','logloss', 'rmse', 'group_auc'
+info:
+    show_step : 10
+    save_epoch : 2
+    metrics : ['rmse']

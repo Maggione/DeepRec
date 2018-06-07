@@ -1,0 +1,24 @@
+1、folder description ：
+    cache :  the cached files for train data, eval data ...
+    checkpoint :  intermediate model
+    config : the configuration file for the model(network.yaml)
+    data :  the original data
+    IO ： cache class and iterator operations class
+    logs :  the log file
+    res : the predicted results for the infer file
+    src : various model files
+    example ：examples of configuration files for various models
+    utils : mainly some tool functions, include various metric
+    main.py ： program entry
+    train.py : mainly describe the training process
+
+2、file in cache folder：
+    eval_impressionId.csv ： impressionId of eval data
+    eval_num.csv : eval sample num
+    infer_impressionId.csv ： impressionId of infer data
+    infer_num.csv : infer sample num
+    test_impressionId.csv ： impressionId of test data
+    test_num.csv : test sample num
+    train_impressionId.csv ： impressionId of train data
+    train_num.csv : train sample num
+    feat_cnt.csv : feat count in train data
