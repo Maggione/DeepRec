@@ -1,4 +1,5 @@
 ![](https://s1.ax1x.com/2017/09/24/QzeaQ.png) 
+
 # **Table Contents**
 - **What is DeepRec** 
 - **How to Use**
@@ -6,8 +7,11 @@
 - **References**
 
 ## **What is DeepRec**
+
 Deeprec is a portable, flexible and comprehensive library including a variety of state-of-the-art deep learning based recommendation models. It aims to solve the item ranking task. Deeprec implements both feature based methods and raw-signal based methods. In feature based methods, deep learning models are applied to the extracted feature files with the specified format. In raw-signal based methods, deep learning models are directly applied to raw singal such as text, images and graph. Current supported models are listed in the following, more methods will be expected in the near future. 
+
 ### **supported model**
+
 model | type | 
 ----|------| 
 lr | feature-based | 
@@ -26,6 +30,7 @@ ripple | knowledge-graph-based |
 mkr | knowledge-graph-based-cf |
 
 ## **How to Use**
+
 ### **Requirement**
 - tensorflow(>=1.4.0)
 - linux
