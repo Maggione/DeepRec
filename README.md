@@ -1,4 +1,4 @@
-![](https://s1.ax1x.com/2017/09/24/QzeaQ.png) 
+<img src="https://s1.ax1x.com/2017/09/24/QzeaQ.png" width="200" height="200" />
 
 # **Table Contents**
 - **What is DeepRec** 
@@ -39,11 +39,9 @@ mkr | knowledge-enhanced | [/data_format/mkr_format.md](https://github.com/zhfzh
 
 #### **Usage**
   1. For each method, prepare your data as the corresponding format listed in Table 1.
-  2. To set the parameters for your method, edit the corresponding configuration file listed in Table 1. Edit **network.yaml** based on your demand, please do not modify the name of the configuration file
+  2. To set the parameters for your method, edit the corresponding configuration file listed in Table 1. Edit [network.yaml](https://github.com/zhfzhmsra/DeepRec/tree/master/config/network.yaml) based on your demand, please do not modify the name of the configuration file
   3. Run this kind of command "python mainArg.py [the choosed model name] train/infer"
 
-#### **parameter description**
-parameter description is [here](https://deeprec.visualstudio.com/deeprec/_wiki/wikis/deeprec.wiki?wikiVersion=GBwikiMaster&pagePath=%2FDeepRec%2FParameter%20Description) 
  
 ## **Benchmark Results**
 **Note**：because our tool is for the mulit-hot data type, that is more common. sparse matrix is ​​used to store data. building a network requires a lot of sparse operations. our tools are currently only for academic experiments, if the number of samples is larger than 1000w, and feature num is larger than 100w, our tool performance may be relatively low.
