@@ -43,8 +43,9 @@ mkr | knowledge-enhanced | [/data_format/mkr_format.md](https://github.com/zhfzh
   3. Run this kind of command "python mainArg.py [the choosed model name] train/infer"
 
 #### **Examples**
-  Here, we give the example of running ExDeepFM, more examples can be found [here]().<br />
-    1. Download the data and Prepare the data in the required format (Libffm for ExDeepFM)
+  Here, we give the example of running ExDeepFM, more examples can be found [here]().
+
+    1. Download the data and Prepare the data in the required format (Libffm for ExDeepFM).
        1). cd data
        2). wget http://files.grouplens.org/datasets/movielens/ml-100k.zip
        3). unzip ml-100k.zip
