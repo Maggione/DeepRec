@@ -14,20 +14,20 @@ DeepRec is a portable, flexible and comprehensive library including a variety of
 
 model | type | data format | configuration example |
 :---|:---| :---|:---| 
-lr | feature-based | [libffm](https://github.com/guestwalk/libffm) | /example/lr.yaml |
-fm | feature-based | [libffm](https://github.com/guestwalk/libffm) | /example/fm.yaml |  
-dnn | feature-based | [libffm](https://github.com/guestwalk/libffm) | /example/dnn.yaml | 
-[ipnn](https://arxiv.org/pdf/1611.00144.pdf) | feature-based | [libffm](https://github.com/guestwalk/libffm) | /example/ipnn.yaml | 
-[opnn](https://arxiv.org/pdf/1611.00144.pdf) | feature-based | [libffm](https://github.com/guestwalk/libffm) | /example/opnn.yaml | 
-[deepWide](https://arxiv.org/abs/1606.07792) | feature-based | [libffm](https://github.com/guestwalk/libffm) | /example/deepWide.yaml |
-[deepFM](https://arxiv.org/abs/1703.04247) | feature-based | [libffm](https://github.com/guestwalk/libffm) | /example/deepFM.yaml |
-[deep&cross](https://arxiv.org/pdf/1708.05123.pdf) | feature-based |[libffm](https://github.com/guestwalk/libffm) | /example/deep&cross.yaml |
-[din](https://arxiv.org/pdf/1706.06978.pdf) | feature-based | XXX | /example/din.yaml |
-[cccfnet](https://dl.acm.org/citation.cfm?id=3054207) | feature-based | XXX | /example/cccfnet_classfy.yaml, cccfnet_regress.yaml |
-[dkn](https://dl.acm.org/citation.cfm?doid=3178876.3186175) | knowledge-enhanced | XXX | /example/dkn.yaml |
-exDeepFM | feature-based | [libffm](https://github.com/guestwalk/libffm) | /example/exDeepFM.yaml  |
-[rippleNet](https://arxiv.org/abs/1803.03467) | knowledge-enhanced | XXX | /example/ripple.yaml |
-mkr | knowledge-enhanced | XXX | /example/mkr.yaml |
+lr | feature-based | [/data_format/libffm_format.md](https://github.com/zhfzhmsra/DeepRec/tree/master/data_format/libffm_format.md) | [/config/lr.yaml](https://github.com/zhfzhmsra/DeepRec/tree/master/config/lr.yaml) |
+fm | feature-based | [/data_format/libffm_format.md](https://github.com/zhfzhmsra/DeepRec/tree/master/data_format/libffm_format.md) | [/config/fm.yaml](https://github.com/zhfzhmsra/DeepRec/tree/master/config/fm.yaml) |  
+dnn | feature-based | [/data_format/libffm_format.md](https://github.com/zhfzhmsra/DeepRec/tree/master/data_format/libffm_format.md) | [/config/dnn.yaml](https://github.com/zhfzhmsra/DeepRec/tree/master/config/dnn.yaml) | 
+[ipnn](https://arxiv.org/pdf/1611.00144.pdf) | feature-based | [/data_format/libffm_format.md](https://github.com/zhfzhmsra/DeepRec/tree/master/data_format/libffm_format.md) | [/config/ipnn.yaml](https://github.com/zhfzhmsra/DeepRec/tree/master/config/ipnn.yaml) | 
+[opnn](https://arxiv.org/pdf/1611.00144.pdf) | feature-based | [/data_format/libffm_format.md](https://github.com/zhfzhmsra/DeepRec/tree/master/data_format/libffm_format.md) | [/config/opnn.yaml](https://github.com/zhfzhmsra/DeepRec/tree/master/config/opnn.yaml) | 
+[deepWide](https://arxiv.org/abs/1606.07792) | feature-based | [/data_format/libffm_format.md](https://github.com/zhfzhmsra/DeepRec/tree/master/data_format/libffm_format.md) | [/config/deepWide.yaml](https://github.com/zhfzhmsra/DeepRec/tree/master/config/deepWide.yaml) |
+[deepFM](https://arxiv.org/abs/1703.04247) | feature-based | [/data_format/libffm_format.md](https://github.com/zhfzhmsra/DeepRec/tree/master/data_format/libffm_format.md) | [/config/deepFM.yaml](https://github.com/zhfzhmsra/DeepRec/tree/master/config/deppFM.yaml) |
+[deep&cross](https://arxiv.org/pdf/1708.05123.pdf) | feature-based |[/data_format/libffm_format.md](https://github.com/zhfzhmsra/DeepRec/tree/master/data_format/libffm_format.md) | [/config/deepcross.yaml](https://github.com/zhfzhmsra/DeepRec/tree/master/config/deepcross.yaml) |
+[din](https://arxiv.org/pdf/1706.06978.pdf) | feature-based | [/data_format/din_format.md](https://github.com/zhfzhmsra/DeepRec/tree/master/data_format/din_format.md) | [/config/din.yaml](https://github.com/zhfzhmsra/DeepRec/tree/master/config/din.yaml) |
+[cccfnet](https://dl.acm.org/citation.cfm?id=3054207) | feature-based | [/data_format/cccfnet_format.md](https://github.com/zhfzhmsra/DeepRec/tree/master/data_format/cccfnet_format.md) | [/config/cccfnet_classfy.yaml](https://github.com/zhfzhmsra/DeepRec/tree/master/config/cccfnet_classfy.yaml), [cccfnet_regress.yaml](https://github.com/zhfzhmsra/DeepRec/tree/master/config/cccfnet_regress.yaml) |
+[dkn](https://dl.acm.org/citation.cfm?doid=3178876.3186175) | knowledge-enhanced | [/data_format/dkn_format.md](https://github.com/zhfzhmsra/DeepRec/tree/master/data_format/dkn_format.md) | [/config/dkn.yaml](https://github.com/zhfzhmsra/DeepRec/tree/master/config/dkn.yaml) |
+exDeepFM | feature-based | [/data_format/libffm_format.md](https://github.com/zhfzhmsra/DeepRec/tree/master/data_format/libffm_format.md) | [/config/exDeepFM.yaml](https://github.com/zhfzhmsra/DeepRec/tree/master/config/exDeepFM.yaml)  |
+[ripple](https://arxiv.org/abs/1803.03467) | knowledge-enhanced | [/data_format/ripple_format.md](https://github.com/zhfzhmsra/DeepRec/tree/master/data_format/ripple_format.md) | [/config/ripple.yaml](https://github.com/zhfzhmsra/DeepRec/tree/master/config/ripple.yaml) |
+mkr | knowledge-enhanced | [/data_format/mkr_format.md](https://github.com/zhfzhmsra/DeepRec/tree/master/data_format/mkr_format.md) | [/config/mkr.yaml](https://github.com/zhfzhmsra/DeepRec/tree/master/config/mkr.yaml) |
 
 ## **How to Use**
 

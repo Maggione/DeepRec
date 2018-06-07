@@ -1,0 +1,48 @@
+#data
+#data format:ffm
+data:
+     train_file  :  data/mkr/ratings_final.txt
+     eval_file  :  data/mkr/sample.txt
+     test_file  :  data/mkr/sample.txt
+     infer_file  :  data/mkr/sample.txt
+     kg_file  : data/mkr/kg_1_final.txt
+     n_users  : 6036
+     n_items  : 2355
+     n_entity : 146648
+     n_relation  : 20
+     data_format : mkr
+
+#model
+#model_type:deepFM or deepWide or dnn or ipnn or opnn or fm or lr
+model:
+    method : classification
+    model_type : mkr
+    dim : 64
+    activation : [tanh]
+    infer_model_name : epoch_2
+
+#    load_model_name : ./checkpoint/epoch_1
+
+
+#train
+#init_method: normal,tnormal,uniform,he_normal,he_uniform,xavier_normal,xavier_uniform
+train:
+    init_method: xavier_uniform
+    init_value : 0.01
+    embed_l2 : 0.01
+    embed_l1 : 0.0000
+    layer_l2 : 0.01
+    layer_l1 : 0.0000
+    lr_rs : 1
+    lr_kg : 0.5
+    optimizer : sgd
+    epochs : 2
+    batch_size : 128
+
+#show info
+#metric :'auc','logloss', 'group_auc'
+info:
+    show_step : 1
+    save_epoch : 2
+    metrics : ['auc','logloss']
+
