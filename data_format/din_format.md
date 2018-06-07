@@ -19,7 +19,7 @@ tool和该模型相关的code和数据
 
 类目 | 说明 | 
 ----|------|
-example/din.yaml | 配置文件的例子 | 
+config/din.yaml | 配置文件的例子 | 
 IO/din_cache.py | 对din数据格式进行解析,压缩成tfrecord |   
 IO/iterator.py | 读取缓存中之后的tfrecord数据进行训练 | 
 src/din.py | 实现模型deep interest network | 

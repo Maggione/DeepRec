@@ -6,7 +6,7 @@ tool和该模型相关的code和数据
 
 code | 说明 |
 ----|------|
-example/deepFM.yaml,deepWide.yaml,dnn.yaml,fm.yaml,ipnn.yaml,lr.yaml,opnn.yaml | 配置文件的例子 |
+config/deepFM.yaml,deepWide.yaml,dnn.yaml,fm.yaml,ipnn.yaml,lr.yaml,opnn.yaml | 配置文件的例子 |
 IO/ffm_cache.py | 对ffm数据格式进行解析,压缩成tfrecord |
 IO/iterator.py | 配置文件的例子 |
 IO/ffm_cache.py | 读取缓存中之后的tfrecord数据进行训练 |

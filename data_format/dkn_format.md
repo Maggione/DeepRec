@@ -20,7 +20,7 @@ tool和该模型相关的code和数据
 
 类目 | 说明 | 
 ----|------|
-example/dkn.yaml | 配置文件的例子 |
+config/dkn.yaml | 配置文件的例子 |
 IO/dkn_cache.py | 对din数据格式进行解析,压缩成tfrecord |
 IO/iterator.py | 读取缓存中之后的tfrecord数据进行训练 | 
 src/dkn.py | 实现模型deep knowledge-aware network |
