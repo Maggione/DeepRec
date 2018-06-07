@@ -42,18 +42,16 @@ mkr | knowledge-enhanced | [/data_format/mkr_format.md](https://github.com/zhfzh
   2. To set the parameters for your method, edit the corresponding configuration file listed in Table 1. Edit [/config/network.yaml](https://github.com/zhfzhmsra/DeepRec/tree/master/config/network.yaml) based on your demand, please do not modify the name of the configuration file
   3. Run this kind of command "python mainArg.py [the choosed model name] train/infer"
 
-#### **Examples**
-  Here, we give the example of running ExDeepFM, more examples can be found [here]().
-
-    1. Download the data and Prepare the data in the required format (libffm for ExDeepFM). Assume you are at the root directory
+#### **Examples**  
+  1. Download the data and Prepare the data in the required format (libffm for ExDeepFM). Assume you are at the root directory
        1) cd data
        2) wget http://files.grouplens.org/datasets/movielens/ml-100k.zip
        3) unzip ml-100k.zip
        4) python ML-100K2Libffm.py
-    2. Edit the corresponding configuration file in [/config/exDeepFM.yaml](https://github.com/zhfzhmsra/DeepRec/tree/master/config/exDeepFM.yaml).
-    3. Train the model use the following command. The first argv element is the directory name for the results. For example, it will create cache/exDeepFM directory to save your cache file, checkpoint/exDeepFM to save your trained model, logs/exDeepFM to save your training log. The second argv element is about the mode. If you want to train a model, you choose "train". If you want to infer results, you choose "infer".
+  2. Edit the corresponding configuration file in [/config/exDeepFM.yaml](https://github.com/zhfzhmsra/DeepRec/tree/master/config/exDeepFM.yaml).
+  3. Train the model use the following command. The first argv element is the directory name for the results. For example, it will create cache/exDeepFM directory to save your cache file, checkpoint/exDeepFM to save your trained model, logs/exDeepFM to save your training log. The second argv element is about the mode. If you want to train a model, you choose "train". If you want to infer results, you choose "infer".
        1) python mainArg.py exDeepFM train
-    4. Infer the result. Configure which trained model you would like to use for inference in [/config/network.yaml](https://github.com/zhfzhmsra/DeepRec/tree/master/config/network.yaml), and then run:
+  4. Infer the result. Configure which trained model you would like to use for inference in [/config/network.yaml](https://github.com/zhfzhmsra/DeepRec/tree/master/config/network.yaml), and then run:
        1) python mainArg.py exDeepFM infer
 
 ## **Benchmark Results**
