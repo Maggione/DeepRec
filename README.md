@@ -39,7 +39,7 @@ mkr | knowledge-enhanced | [/data_format/mkr_format.md](https://github.com/zhfzh
 
 #### **Usage**
   1. For each method, prepare your data as the corresponding format listed in Table 1.
-  2. To set the parameters for your method, edit the corresponding configuration file listed in Table 1. Edit [/config/network.yaml](https://github.com/zhfzhmsra/DeepRec/tree/master/config/network.yaml) based on your demand, please do not modify the name of the configuration file
+  2. Edit the corresponding configuration file listed in Table 1, so set the parameters for your method, such as training filename, testing filename, etc. 
   3. Run this kind of command "python mainArg.py [the choosed model name] train/infer"
 
 #### **Examples**  
