@@ -13,7 +13,7 @@ DeepRec is a portable, flexible and comprehensive library including a variety of
 ### **currently supported models**
 
 model | type | data format | configuration example |
-:---|:---| :---|:---| 
+:---|:-----| :---|:------| 
 lr | feature-based | [/data_format/libffm_format.md](https://github.com/zhfzhmsra/DeepRec/tree/master/data_format/libffm_format.md) | [/config/lr.yaml](https://github.com/zhfzhmsra/DeepRec/tree/master/config/lr.yaml) |
 fm | feature-based | [/data_format/libffm_format.md](https://github.com/zhfzhmsra/DeepRec/tree/master/data_format/libffm_format.md) | [/config/fm.yaml](https://github.com/zhfzhmsra/DeepRec/tree/master/config/fm.yaml) |  
 dnn | feature-based | [/data_format/libffm_format.md](https://github.com/zhfzhmsra/DeepRec/tree/master/data_format/libffm_format.md) | [/config/dnn.yaml](https://github.com/zhfzhmsra/DeepRec/tree/master/config/dnn.yaml) | 
