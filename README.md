@@ -13,7 +13,7 @@ DeepRec is a portable, flexible and comprehensive library including a variety of
 ### **supported model**
 
 model | type | 
-:--:|:--:| 
+:---|:---| 
 lr | feature-based | 
 fm | feature-based |   
 dnn | feature-based |  
