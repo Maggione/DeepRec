@@ -33,40 +33,16 @@ mkr | knowledge-enhanced | [/data_format/mkr_format.md](https://github.com/zhfzh
 
 ## **How to Use**
 
-### **Requirement**
+#### **Requirement**
 - Enviroment: linux, python 3 
 - Dependent packages: tensorflow (>=1.4.0), sklearn, yaml, numpy 
 
-In order to use the tool, firstly, prepare your data, we support data format include libffm format, cccfnet format, din format. each model corresponds to the data format is as follows
+#### **Usage**
+  1. For each method, prepare your data as the corresponding format listed in Table 1.
+  2. Edit the corresponding configuration file listed in Table 1. Edit **network.yaml** based on your demand, do not modify the name of the configuration file
+  3. python mainArg.py [the choosed model name] train/infer
 
-model | data format | configuration example
-----|------|------| 
-lr | [libffm](https://github.com/guestwalk/libffm)  | DeepRec/example/lr.yaml | 
-fm | [libffm](https://github.com/guestwalk/libffm) | DeepRec/example/fm.yaml |   
-dnn | [libffm](https://github.com/guestwalk/libffm) | DeepRec/example/dnn.yaml |  
-ipnn | [libffm](https://github.com/guestwalk/libffm) | DeepRec/example/ipnn.yaml |  
-opnn | [libffm](https://github.com/guestwalk/libffm) | DeepRec/example/opnn.yaml |  
-deepWide | [libffm](https://github.com/guestwalk/libffm) | DeepRec/example/deepWide.yaml | 
-deepFM | [libffm](https://github.com/guestwalk/libffm) | DeepRec/example/deepFM.yaml | 
-deep&cross | [libffm](https://github.com/guestwalk/libffm) | DeepRec/example/deep&cross.yaml | 
-exDeepFM | [libffm](https://github.com/guestwalk/libffm) | DeepRec/example/exDeepFM.yaml|
-din | [din](https://deeprec.visualstudio.com/deeprec/_wiki/wikis/deeprec.wiki?wikiVersion=GBwikiMaster&pagePath=%2FDeepRec%2FDIN%20Format)| DeepRec/example/din.yaml | 
-cccfnet | [cccfnet](https://deeprec.visualstudio.com/deeprec/_wiki/wikis/deeprec.wiki?wikiVersion=GBwikiMaster&pagePath=%2FDeepRec%2FCCCFNet%20Format)| DeepRec/example/cccfnet_classfy.yaml, cccfnet_regress.yaml| 
-dkn | [dkn](https://deeprec.visualstudio.com/deeprec/_wiki/wikis/deeprec.wiki?wikiVersion=GBwikiMaster&pagePath=%2FDeepRec%2FDKN%20Format) | DeepRec/example/dkn.yaml |
-ripple | [ripple](https://deeprec.visualstudio.com/deeprec/_wiki/wikis/deeprec.wiki?wikiVersion=GBwikiMaster&pagePath=%2FDeepRec%2FRippleNetwork%20Format) | DeepRec/example/ripple.yaml |
-mkr | [mkr](https://deeprec.visualstudio.com/deeprec/_wiki/wikis/deeprec.wiki?wikiVersion=GBwikiMaster&pagePath=%2FDeepRec%2FMKR%20Format) | DeepRec/example/mkr.yaml |
 
-Secondly, you just need to download code and edit the configuration file.
-for example:
-```
-git clone git@bitbucket.org:lujaindong/deeprec.git
-cd deeprec/
-cd config/
-```
-then you edit **network.yaml** based on your demand,do not modify the name of the configuration file.
-finally
-```
-python mainArg.py [Dirname] train/infer 
 ``` 
 
 ### **parameter configuration**
