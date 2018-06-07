@@ -54,9 +54,13 @@ Here, we give the example of running ExDeepFM, more examples can be found [here]
        ```
   2. Edit the corresponding configuration file in [/config/exDeepFM.yaml](https://github.com/zhfzhmsra/DeepRec/tree/master/config/exDeepFM.yaml).
   3. Train the model use the following command. The first argv element is the directory name for the results. For example, it will create cache/exDeepFM directory to save your cache file, checkpoint/exDeepFM to save your trained model, logs/exDeepFM to save your training log. The second argv element is about the mode. If you want to train a model, you choose "train". If you want to infer results, you choose "infer".
-       ``` python mainArg.py exDeepFM train ``` 
+       ```
+       python mainArg.py exDeepFM train
+       ```
   4. Infer the result. Configure which trained model you would like to use for inference in [/config/network.yaml](https://github.com/zhfzhmsra/DeepRec/tree/master/config/network.yaml), and then run:
-       ``` python mainArg.py exDeepFM infer ```
+       ```
+       python mainArg.py exDeepFM infer
+       ```
 
 ## **Benchmark Results**
 **Note**：because our tool is for the mulit-hot data type, that is more common. sparse matrix is ​​used to store data. building a network requires a lot of sparse operations. our tools are currently only for academic experiments, if the number of samples is larger than 1000w, and feature num is larger than 100w, our tool performance may be relatively low.
