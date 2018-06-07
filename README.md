@@ -13,21 +13,21 @@ DeepRec is a portable, flexible and comprehensive library including a variety of
 ### **supported model**
 
 model | type | 
-----|------| 
+:--:|:--:| 
 lr | feature-based | 
 fm | feature-based |   
 dnn | feature-based |  
 [ipnn](https://arxiv.org/pdf/1611.00144.pdf) | feature-based |  
 [opnn](https://arxiv.org/pdf/1611.00144.pdf) | feature-based |  
-deepWide | feature-based | 
-deepFM | feature-based | 
-deep&cross | feature-based |
-din | feature-based |
-cccfnet | feature-based |
-dkn | text_feature-based |
+[deepWide](https://arxiv.org/abs/1606.07792) | feature-based | 
+[deepFM](https://arxiv.org/abs/1703.04247) | feature-based | 
+[deep&cross](https://arxiv.org/pdf/1708.05123.pdf) | feature-based |
+[din](https://arxiv.org/pdf/1706.06978.pdf) | feature-based |
+[cccfnet](https://dl.acm.org/citation.cfm?id=3054207) | feature-based |
+[dkn](https://dl.acm.org/citation.cfm?doid=3178876.3186175) | knowledge-enhanced |
 exDeepFM | feature-based |
-ripple | knowledge-graph-based |
-mkr | knowledge-graph-based-cf |
+[rippleNet](https://arxiv.org/abs/1803.03467) | knowledge-enhanced |
+mkr | knowledge-enhanced |
 
 ## **How to Use**
 
