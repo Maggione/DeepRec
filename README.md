@@ -10,11 +10,11 @@
 
 DeepRec is a portable, flexible and comprehensive library including a variety of state-of-the-art deep learning based recommendation models. It aims to solve the item ranking task. In current version, DeepRec supports two kinds of methods: feature-based methods and knowledge-enhanced methods. In feature-based methods, deep learning models are applied to the extracted feature files with the specified format. In knowledge-enhanced methods, the signals from knowledge graph are leveraged to improve the recommendation performance. Current supported models are listed in the following, more methods will be expected in the near future. 
 
-### **supported model**
+### **currently supported models**
 
-model | type | 
-:---|:---| 
-lr | feature-based | 
+model | type | data format | configuration example |
+:---|:---| :---|:---| 
+lr | feature-based | [libffm](https://github.com/guestwalk/libffm) | /example/lr.yaml |
 fm | feature-based |   
 dnn | feature-based |  
 [ipnn](https://arxiv.org/pdf/1611.00144.pdf) | feature-based |  
@@ -39,7 +39,7 @@ In order to use the tool, firstly, prepare your data, we support data format inc
 
 model | data format | configuration example
 ----|------|------| 
-lr | [libffm](https://github.com/guestwalk/libffm) | DeepRec/example/lr.yaml | 
+lr | [libffm](https://github.com/guestwalk/libffm)  | DeepRec/example/lr.yaml | 
 fm | [libffm](https://github.com/guestwalk/libffm) | DeepRec/example/fm.yaml |   
 dnn | [libffm](https://github.com/guestwalk/libffm) | DeepRec/example/dnn.yaml |  
 ipnn | [libffm](https://github.com/guestwalk/libffm) | DeepRec/example/ipnn.yaml |  
