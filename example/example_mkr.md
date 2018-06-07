@@ -1,0 +1,22 @@
+# Example: MKR
+
+## step 1. Prepare the data in the required format (mkr for MKR) 
+[/data_format/mkr_format.md](https://github.com/zhfzhmsra/DeepRec/tree/master/data_format/mkr_format.md).
+We provide an example in [/data/mkr](https://github.com/zhfzhmsra/DeepRec/tree/master/data/mkr).
+
+## step 2. Edit the configuration file and then run:
+```
+cp config/mkr.yaml config/network.yaml
+```
+
+
+## step 3. Train the model
+```
+python mainArg.py mkr train
+```
+
+## step 4. Infer the result
+Configure which trained model you would like to use for inference in config/network.yaml, and then run:
+```
+python mainArg.py cccfnet infer
+```

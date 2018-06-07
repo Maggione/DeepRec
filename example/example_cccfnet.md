@@ -2,9 +2,9 @@
 
 ## step 1. Prepare the data in the required format (cccfnet for CCCFNet)
 The training data should be prepared in the required format as described in [/data_format/cccfnet_format.md](https://github.com/zhfzhmsra/DeepRec/tree/master/data_format/cccfnet_format.md).
-We provide an example in data/cccfnet.
+We provide an example in [/data/cccfnet](https://github.com/zhfzhmsra/DeepRec/tree/master/data/cccfnet).
 
-## step 2. Edit the configuration file
+## step 2. Edit the configuration file and then run:
 ```
 cp config/cccfnet_classfy.yaml config/network.yaml
 ```
