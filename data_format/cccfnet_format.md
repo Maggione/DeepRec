@@ -18,15 +18,15 @@ cccfnet format is designed for cccfnet model
 ```
 说明：数据分为5列
 
-评分 | userId | itemId | 用户的属性特征 | 物品的属性特征 |
+评分 | userId | itemId | 用户的属性特征 | 物品的属性特征
  
 类目 | 说明 | 
 ----|------| 
-评分 | 视具体问题而定，如果是分类问题那就是0~1,否则就是1.0~5.0分 | 
+评分 | 视具体问题而定，如果是分类问题那就是0/1,否则就是1.0-5.0分 | 
 userId | id从0开始计数，userId的总数对应于参数n_user |   
 itemId | id从0开始计数，itemId的总数对应于参数n_item | 
-用户的属性特征 | 格式为multi-hot类型(feat1:va1, feat2:val2..),如果缺失,则在解析的时候不上(0:0.0) |   
-物品的属性特征 | 格式为multi-hot类型(feat1:va1, feat2:val2..),如果缺失,则在解析的时候不上(0:0.0) |
+用户的属性特征 | 格式为multi-hot类型(feat1:va1, feat2:val2..),如果缺失,则在解析的时候程序自动补上(0:0.0) |   
+物品的属性特征 | 格式为multi-hot类型(feat1:va1, feat2:val2..),如果缺失,则在解析的时候程序自动补上(0:0.0) |
 
 cccfnet format是为了cccfnet模型设计的数据格式
 
@@ -34,7 +34,7 @@ tool和该模型相关的code和数据
 
 code | 说明 | 
 ----|------|
-example/cccfnet_regress.yaml,cccfnet_classfy.yaml | 配置文件的例子 |
+config/cccfnet_regress.yaml,cccfnet_classfy.yaml | 配置文件的例子 |
 IO/cccfnet_cache.py | 对cccfnet数据进行解析,压缩成tfrecord |
 IO/iterator.py | 读取缓存中之后的tfrecord数据进行训练 |
 src/cccfnet.py | 实现模型cccfnet |
