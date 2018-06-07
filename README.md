@@ -29,6 +29,8 @@ exDeepFM | feature-based | [/data_format/libffm_format.md](https://github.com/zh
 [ripple](https://arxiv.org/abs/1803.03467) | knowledge-enhanced | [/data_format/ripple_format.md](https://github.com/zhfzhmsra/DeepRec/tree/master/data_format/ripple_format.md) | [/config/ripple.yaml](https://github.com/zhfzhmsra/DeepRec/tree/master/config/ripple.yaml) |
 mkr | knowledge-enhanced | [/data_format/mkr_format.md](https://github.com/zhfzhmsra/DeepRec/tree/master/data_format/mkr_format.md) | [/config/mkr.yaml](https://github.com/zhfzhmsra/DeepRec/tree/master/config/mkr.yaml) |
 
+<div align="center">Table 1</div>
+
 ## **How to Use**
 
 ### **Requirement**
