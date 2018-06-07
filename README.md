@@ -33,16 +33,16 @@ mkr | knowledge-enhanced | [/data_format/mkr_format.md](https://github.com/zhfzh
 
 ## **How to Use**
 
-#### **Requirement**
+### **Requirement**
 - Enviroment: linux, python 3 
 - Dependent packages: tensorflow (>=1.4.0), sklearn, yaml, numpy 
 
-#### **Usage**
+### **Usage**
   1. For each method, prepare your data as the corresponding format listed in Table 1.
   2. Edit the corresponding configuration file listed in Table 1, to set the parameters for your method, such as training filename, testing filename, etc. 
   3. Run this kind of command "python mainArg.py [the choosed model name] train/infer"
 
-#### **Examples**  
+### **Examples**  
 Here, we give the example of running ExDeepFM, more examples can be found [here](https://github.com/zhfzhmsra/DeepRec/tree/master/example/).
 
   1. Download the data and Prepare the data in the required format (libffm for ExDeepFM). Assume you are at the root directory.
@@ -66,8 +66,7 @@ Here, we give the example of running ExDeepFM, more examples can be found [here]
        ```
 
 ## **Benchmark Results**
-**Note**：because our tool is for the mulit-hot data type, that is more common. sparse matrix is ​​used to store data. building a network requires a lot of sparse operations. our tools are currently only for academic experiments, if the number of samples is larger than 1000w, and feature num is larger than 100w, our tool performance may be relatively low.
-we are trying to improve efficiency 
+
 ### **benchmark-1**
 we sample 300w from criteo dataset([dataset](https://www.kaggle.com/c/criteo-display-ad-challenge)), dealing with long tail features and continuous features. the dataset has 26w features and 300w samples.we split the dataset randomly into three parts: 80% is for training, 10% is for validating, 10% is for testing.
 
@@ -95,6 +94,10 @@ opnn | 0.7332 | 0.3698 | 197.3 |
 deepWide | 0.7346 | 0.3721 | 202.1 | 
 deepFM | 0.7324 | 0.3759 | 233.6 | 
 din | 0.7401 | 0.3763 | 331.4 | 
+
+## **Note**
+  1. DeepRec supports the mulit-hot data type by default, sparse matrix is ​​used to store data. 
+  2. DeepRec is currently designed only for academic experiments, if the number of samples is larger than 1000w, and feature num is larger than 100w, it may suffer from efficiency issues. We are trying to improve efficiency.
 
 ## References
 - [xDeepFM: Combining Explicit and Implicit Feature Interactions for Recommender Systems](https://arxiv.org/abs/1803.05170)
