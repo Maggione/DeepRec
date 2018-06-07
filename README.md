@@ -39,22 +39,10 @@ mkr | knowledge-enhanced | [/data_format/mkr_format.md](https://github.com/zhfzh
 
 #### **Usage**
   1. For each method, prepare your data as the corresponding format listed in Table 1.
-  2. Edit the corresponding configuration file listed in Table 1. Edit **network.yaml** based on your demand, do not modify the name of the configuration file
-  3. run with the kind of command "python mainArg.py [the choosed model name] train/infer"
+  2. To set the parameters for your method, edit the corresponding configuration file listed in Table 1. Edit **network.yaml** based on your demand, please do not modify the name of the configuration file
+  3. Run this kind of command "python mainArg.py [the choosed model name] train/infer"
 
-
-
-### **parameter configuration**
-model| configuration example |
-----|------| 
-dkn | [dkn configuration](https://deeprec.visualstudio.com/deeprec/_wiki/wikis/deeprec.wiki?wikiVersion=GBwikiMaster&pagePath=%2FDeepRec%2FDKN%20Configuration) |
-cccfnet | [cccfnet configuration](https://deeprec.visualstudio.com/deeprec/_wiki/wikis/deeprec.wiki?wikiVersion=GBwikiMaster&pagePath=%2FDeepRec%2FCCCFNet%20Configuration) | 
-din | [din configuration](https://deeprec.visualstudio.com/deeprec/_wiki/wikis/deeprec.wiki?wikiVersion=GBwikiMaster&pagePath=%2FDeepRec%2FDIN%20Configuration) |
-dnn-based model |[dnn-based model configuration](https://deeprec.visualstudio.com/deeprec/_wiki/wikis/deeprec.wiki?wikiVersion=GBwikiMaster&pagePath=%2FDeepRec%2FDNN%252Dbased%20model%20Configuration) | 
-ripple | [ripple configuration](https://deeprec.visualstudio.com/deeprec/_wiki/wikis/deeprec.wiki?wikiVersion=GBwikiMaster&pagePath=%2FDeepRec%2FRippleNetwork%20Configuration) |
-mkr | [mkr configuration](https://deeprec.visualstudio.com/deeprec/_wiki/wikis/deeprec.wiki?wikiVersion=GBwikiMaster&pagePath=%2FDeepRec%2FMKR%20Configuration) |
-
-### **parameter description**
+#### **parameter description**
 parameter description is [here](https://deeprec.visualstudio.com/deeprec/_wiki/wikis/deeprec.wiki?wikiVersion=GBwikiMaster&pagePath=%2FDeepRec%2FParameter%20Description) 
  
 ## **Benchmark Results**
