@@ -1,4 +1,4 @@
-<img src="https://s1.ax1x.com/2017/09/24/QzeaQ.png" width="400" height="200" />
+<img src="https://s1.ax1x.com/2017/09/24/QzeaQ.png" width="509" height="176" />
 
 # **Table Contents**
 - **What is DeepRec** 
