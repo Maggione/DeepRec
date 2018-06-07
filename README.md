@@ -43,7 +43,7 @@ mkr | knowledge-enhanced | [/data_format/mkr_format.md](https://github.com/zhfzh
   3. Run this kind of command "python mainArg.py [the choosed model name] train/infer"
 
 #### **Examples**  
-Here, we give the example of running ExDeepFM, more examples can be found [here]().
+Here, we give the example of running ExDeepFM, more examples can be found [here](https://github.com/zhfzhmsra/DeepRec/tree/master/example/).
 
   1. Download the data and Prepare the data in the required format (libffm for ExDeepFM). Assume you are at the root directory.
        ```
@@ -53,7 +53,7 @@ Here, we give the example of running ExDeepFM, more examples can be found [here]
        python ML-100K2Libffm.py
        ```
   2. Edit the corresponding configuration file in [/config/exDeepFM.yaml](https://github.com/zhfzhmsra/DeepRec/tree/master/config/exDeepFM.yaml).
-  3. Train the model use the following command. The first argv element is the directory name for the results. For example, it will create cache/exDeepFM directory to save your cache file, checkpoint/exDeepFM to save your trained model, logs/exDeepFM to save your training log. The second argv element is about the mode. If you want to train a model, you choose "train". If you want to infer results, you choose "infer".
+  3. Train the model using the following command. The first argv element is the directory name for the results. For example, it will create /cache/exDeepFM directory to save your cache file, /checkpoint/exDeepFM to save your trained model, /logs/exDeepFM to save your training log. The second argv element is about the mode. If you want to train a model, you choose "train". If you want to infer results, you choose "infer".
        ```
        python mainArg.py exDeepFM train
        ```
