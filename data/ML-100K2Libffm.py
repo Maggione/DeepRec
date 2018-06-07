@@ -72,8 +72,8 @@ def create_final_file(filepath):
             train_final.write(final_str)
 
 if __name__ == "__main__":
-    user_feature_dict, user_feature_num = create_userid_dict("ml-100k/ml-100k/u.user", 3)
-    item_feature_dict, item_feature_num = create_itemid_dict("ml-100k/ml-100k/u.item", 4)
+    user_feature_dict, user_feature_num = create_userid_dict("ml-100k/u.user", 3)
+    item_feature_dict, item_feature_num = create_itemid_dict("ml-100k/u.item", 4)
     print("feature_num: " + str(user_feature_num+item_feature_num))
-    create_final_file("ml-100k/ml-100k/ua.base")
-    create_final_file("ml-100k/ml-100k/ua.test")
+    create_final_file("ml-100k/ua.base")
+    create_final_file("ml-100k/ua.test")
