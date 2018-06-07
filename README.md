@@ -45,12 +45,11 @@ mkr | knowledge-enhanced | [/data_format/mkr_format.md](https://github.com/zhfzh
 #### **Examples**
   Here, we give the example of running ExDeepFM, more examples can be found [here]().
     1. Download the data and Prepare the data in the required format (Libffm for ExDeepFM)
-    ```
-cd data
-wget http://files.grouplens.org/datasets/movielens/ml-100k.zip
-unzip ml-100k.zip
-python ML-100K2Libffm.py
-```
+       1). cd data
+       2). wget http://files.grouplens.org/datasets/movielens/ml-100k.zip
+       3). unzip ml-100k.zip
+       4). python ML-100K2Libffm.py
+
 
 ## **Benchmark Results**
 **Note**：because our tool is for the mulit-hot data type, that is more common. sparse matrix is ​​used to store data. building a network requires a lot of sparse operations. our tools are currently only for academic experiments, if the number of samples is larger than 1000w, and feature num is larger than 100w, our tool performance may be relatively low.
