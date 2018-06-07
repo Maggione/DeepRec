@@ -32,11 +32,10 @@ mkr | knowledge-enhanced |
 ## **How to Use**
 
 ### **Requirement**
-- tensorflow(>=1.4.0)
-- linux
-- sklearn,yaml,numpy 
+- Enviroment: linux, python 3 
+- Dependent packages: tensorflow (>=1.4.0), sklearn, yaml, numpy 
 
-in order to use the tool, firstly,prepare your data, we support data format include libffm format, cccfnet format, din format. each model corresponds to the data format is as follows
+In order to use the tool, firstly, prepare your data, we support data format include libffm format, cccfnet format, din format. each model corresponds to the data format is as follows
 
 model | data format | configuration example
 ----|------|------| 
@@ -55,7 +54,7 @@ dkn | [dkn](https://deeprec.visualstudio.com/deeprec/_wiki/wikis/deeprec.wiki?wi
 ripple | [ripple](https://deeprec.visualstudio.com/deeprec/_wiki/wikis/deeprec.wiki?wikiVersion=GBwikiMaster&pagePath=%2FDeepRec%2FRippleNetwork%20Format) | DeepRec/example/ripple.yaml |
 mkr | [mkr](https://deeprec.visualstudio.com/deeprec/_wiki/wikis/deeprec.wiki?wikiVersion=GBwikiMaster&pagePath=%2FDeepRec%2FMKR%20Format) | DeepRec/example/mkr.yaml |
 
-secondly, you just need to download code and edit the configuration file.
+Secondly, you just need to download code and edit the configuration file.
 for example:
 ```
 git clone git@bitbucket.org:lujaindong/deeprec.git
