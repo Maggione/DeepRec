@@ -53,6 +53,9 @@ Here, we give the example of running ExDeepFM, more examples can be found [here]
        python ML-100K2Libffm.py
        ```
   2. Edit the corresponding configuration file in [/config/exDeepFM.yaml](https://github.com/zhfzhmsra/DeepRec/tree/master/config/exDeepFM.yaml).
+       ```
+       cp config/exDeepFM.yaml config/network.yaml
+       ```
   3. Train the model using the following command. The first argv element is the directory name for the results. For example, it will create /cache/exDeepFM directory to save your cache file, /checkpoint/exDeepFM to save your trained model, /logs/exDeepFM to save your training log. The second argv element is about the mode. If you want to train a model, you choose "train". If you want to infer results, you choose "infer".
        ```
        python mainArg.py exDeepFM train
