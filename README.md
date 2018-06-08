@@ -35,7 +35,7 @@ mkr | knowledge-enhanced | [/data_format/mkr_format.md](https://github.com/zhfzh
 
 ### **Requirement**
 - Enviroment: linux, python 3 
-- Dependent packages: tensorflow (>=1.4.0), sklearn, yaml, numpy 
+- Dependent packages: tensorflow (>=1.7.0), sklearn, yaml, numpy 
 
 ### **Usage**
   1. For each method, prepare your data as the corresponding format listed in Table 1.

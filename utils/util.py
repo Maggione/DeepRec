@@ -40,7 +40,7 @@ def check_and_mkdir():
 
 
 def check_tensorflow_version():
-    if tf.__version__ < "1.7.0":
+    if tf.__version__ < "1.4.0":
         raise EnvironmentError("Tensorflow version must >= 1.7.0,but version is {0}". \
                                format(tf.__version__))
 
