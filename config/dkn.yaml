@@ -17,6 +17,7 @@ info:
   - f1
   - logloss
   show_step: 10
+  save_epoch : 2
 model:
   method : classification
   activation:
