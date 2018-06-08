@@ -52,17 +52,17 @@ Here, we give the example of running ExDeepFM, more examples can be found [here]
        unzip ml-100k.zip
        python ML-100K2Libffm.py
        ```
-  2. Edit the corresponding configuration file in [/config/exDeepFM.yaml](https://github.com/zhfzhmsra/DeepRec/tree/master/config/exDeepFM.yaml), and then run the following command to override the actually used configuration file.
+  2. Edit the corresponding configuration file in [/config/exDeepFM.yaml](https://github.com/zhfzhmsra/DeepRec/tree/master/config/exDeepFM.yaml) for both training and testing, and then run the following command to override the actually used configuration file.
        ```
        cp config/exDeepFM.yaml config/network.yaml
        ```
-  3. Train the model using the following command. The first argv element is the directory name for the results. For example, it will create /cache/exDeepFM directory to save your cache file, /checkpoint/exDeepFM to save your trained model, /logs/exDeepFM to save your training log. The second argv element is about the mode. If you want to train a model, you choose "train". If you want to infer results, you choose "infer".
+  3. Train the model using the following command. The first argv element ("exDeepFM_Model_1") is the directory name for the results. For example, it will create /cache/exDeepFM_Model_1 directory to save your cache file, /checkpoint/exDeepFM_Model_1 to save your trained model, /logs/exDeepFM_Model_1 to save your training log. The second argv element is about the mode. If you want to train a model, you choose "train". If you want to infer results, you choose "infer".
        ```
-       python mainArg.py exDeepFM train
+       python mainArg.py exDeepFM_Model_1 train
        ```
-  4. Infer the result. Configure which trained model you would like to use for inference in [/config/network.yaml](https://github.com/zhfzhmsra/DeepRec/tree/master/config/network.yaml), and then run:
+  4. Infer the result. Given the trained model in /checkpoint/exDeepFM_Model_1 in step 3, and then run:
        ```
-       python mainArg.py exDeepFM infer
+       python mainArg.py exDeepFM_Model_1 infer
        ```
 
 ## **Benchmark Results**
