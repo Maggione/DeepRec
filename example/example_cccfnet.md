@@ -16,7 +16,6 @@ python mainArg.py cccfnet train
 ```
 
 ## step 4. Infer the result
-Configure which trained model you would like to use for inference in config/network.yaml, and then run:
 ```
 python mainArg.py cccfnet infer
 ```
