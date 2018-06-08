@@ -99,7 +99,7 @@ def run_infer(load_model, load_sess, filename, hparams, sample_num_file):
     # with open(sample_num_file, 'r') as f:
     #     sample_num = int(f.readlines()[0].strip())
     if not os.path.exists(util.RES_DIR):
-        os.mkdir(util.RES_DIR)
+        os.makedirs(util.RES_DIR)
     load_sess.run(load_model.iterator.initializer, feed_dict={load_model.filenames: [filename]})
     preds = []
     while True:
@@ -147,7 +147,7 @@ def cache_data(hparams, filename, flag):
         raise ValueError(
             "data format must be ffm, din, cccfnet, dkn, ripple, mkr, this format not defined {0}".format(hparams.data_format))
     if not os.path.exists(util.CACHE_DIR):
-        os.mkdir(util.CACHE_DIR)
+        os.makedirs(util.CACHE_DIR)
     if flag == 'train':
         hparams.train_file_cache = util.convert_cached_name(hparams.train_file, hparams.batch_size)
         cached_name = hparams.train_file_cache

@@ -30,7 +30,7 @@ INFER = "train"
 def check_and_mkdir():
     def make_dir(DIR):
         if not os.path.exists(DIR):
-            os.mkdir(DIR)
+            os.makedirs(DIR)
 
     make_dir(RES_DIR)
     make_dir(CACHE_DIR)
